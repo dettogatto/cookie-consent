@@ -1,0 +1,103 @@
+
+.gatto-cookie-bar{              /* La Barra */
+  background-color: blue;         /* Colore di sfondo */
+  color: #fff;                    /* Colore del testo */
+  border-radius: 5px;             /* Raggio del bordo */
+  border-width: 0px;              /* Spessore del bordo */
+  border-color: #000;             /* Colore del bordo */
+  max-width: auto;               /* Massima larghezza della barra (boxed) */
+}
+
+.gatto-cookie-bar a{            /* I link */
+  color: #fff;                    /* Colore dei link nel testo */
+  text-decoration: underline;     /* Lo stile da applicare al testo dei link */
+}
+
+.gatto-cookie-bar a:hover{      /* I link con mouse sopra */
+  color: #000;                    /* Colore dei link nel testo */
+}
+
+.gatto-cookie-bar-btn{          /* Il bottone "Abilita" */
+  background-color: #fff;         /* Colore di sfondo */
+  color: #000;                    /* Colore del testo */
+  border-radius: 5px;             /* Raggio del bordo */
+  border-width: 0px;              /* Spessore del bordo */
+  border-color: #000;             /* Colore del bordo */
+}
+
+.gatto-cookie-bar-btn:hover{    /* Il bottone "Abilita" con mouse sopra */
+  background-color: #000;         /* Colore di sfondo */
+  color: #fff;                    /* Colore del testo */
+  border-radius: 5px;             /* Raggio del bordo */
+  border-width: 0px;              /* Spessore del bordo */
+  border-color: #000;             /* Colore del bordo */
+}
+
+.gatto-cookie-bar-exit{         /* Il link "mantieni disabilitati" */
+  color: #fff;                    /* Colore del testo */
+}
+
+
+.gatto-cookie-bar{
+  transition: all 0.3s;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  padding: 20px;
+  display: flex;
+  font-family: Arial;
+  font-size: 16px;
+  border-style: solid;
+  margin: auto;
+}
+
+.gatto-cookie-bar-text{
+  flex-grow: 1;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.gatto-cookie-bar a{
+  transition: all 0.3s;
+}
+
+.gatto-cookie-bar-btn, .gatto-cookie-bar-exit{
+  transition: all 0.3s;
+  margin: auto;
+  font-size: 14px;
+  padding: 7px 15px;
+  cursor: pointer;
+  outline: none;
+  display: block;
+}
+
+.gatto-cookie-bar-exit{
+  background: none;
+  border: none;
+}
+
+.gatto-cookie-bar-btn-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .gatto-cookie-bar{
+    flex-wrap: wrap;
+    /* bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: 0px; */
+  }
+  .gatto-cookie-bar-text{
+    margin-right: 0px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .gatto-cookie-bar-btn-container{
+    width: 100%;
+  }
+}
