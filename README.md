@@ -14,7 +14,9 @@ Lastly you need to identify and block all the scripts that set up cookies on the
 To block a script edit it like this:
 
 `<script type="text/javascript" src="your-script-path"></script>`
+
 &#11015;&#11015;&#11015;
+
 `<script type="text/plain" src="your-script-path" data-cookieconsent></script>`
 
 ## Customization
