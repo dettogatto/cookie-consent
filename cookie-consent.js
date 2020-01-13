@@ -8,12 +8,14 @@ const CookieConsentExitText = "Esci";
 
 function enableCookies(){
   localStorage.setItem("gatto-cookie-bar", "enabled");
+  sessionStorage.removeItem("gatto-cookie-bar");
   enableJavascriptFiles();
   removeCookieBar();
 }
 
 function disableCookies(){
   sessionStorage.setItem("gatto-cookie-bar", "disabled");
+  localStorage.removeItem("gatto-cookie-bar");
   removeCookieBar();
 }
 

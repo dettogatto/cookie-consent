@@ -1,3 +1,4 @@
+/* Touch */
 
 .gatto-cookie-bar{              /* La Barra */
   background-color: blue;         /* Colore di sfondo */
@@ -5,7 +6,7 @@
   border-radius: 5px;             /* Raggio del bordo */
   border-width: 0px;              /* Spessore del bordo */
   border-color: #000;             /* Colore del bordo */
-  max-width: auto;               /* Massima larghezza della barra (boxed) */
+  max-width: auto;                /* Massima larghezza della barra (boxed) */
 }
 
 .gatto-cookie-bar a{            /* I link */
@@ -37,6 +38,10 @@
   color: #fff;                    /* Colore del testo */
 }
 
+
+
+
+/* Don't touch, pls */
 
 .gatto-cookie-bar{
   transition: all 0.3s;
