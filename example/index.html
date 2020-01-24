@@ -16,6 +16,14 @@
     p{
       text-align: justify;
     }
+    button{
+      cursor: pointer;
+    }
+    .reset{
+      background: none;
+      border: none;
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -32,6 +40,8 @@
     gingerbread apple pie brownie jujubes gingerbread cookie biscuit oat cake
     topping. Sugar plum.
   </p>
-  <button onClick="enableCookies()">ciao</button>
+  <button id="check-js">I do nothing...</button>
+  <br><br><br>
+  <button id="reset-js" class="reset" onclick="resetCookieConsent()">RESET</button>
 </body>
 </html>

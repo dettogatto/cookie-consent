@@ -6,7 +6,7 @@
   border-radius: 5px;             /* Raggio del bordo */
   border-width: 0px;              /* Spessore del bordo */
   border-color: #000;             /* Colore del bordo */
-  max-width: auto;                /* Massima larghezza della barra (boxed) */
+  max-width: auto;                /* Massima larghezza della barra (se si vuole boxed) */
 }
 
 .gatto-cookie-bar a{            /* I link */

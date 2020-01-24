@@ -3,6 +3,7 @@
 const CookieConsentText = 'Ciao Bello<br><br><br> :D Clicca <a href="https://cosmo.cat" target="_blank">qui</a> per volare';
 const CookieConsentButtonText = "Voglio i biscotti!";
 const CookieConsentExitText = "Esci";
+const CookieConsentFireDOMContentLoaded = true;
 
 /* Don't touch, pls */
 
@@ -17,6 +18,12 @@ function disableCookies(){
   sessionStorage.setItem("gatto-cookie-bar", "disabled");
   localStorage.removeItem("gatto-cookie-bar");
   removeCookieBar();
+}
+
+function resetCookieConsent(){
+  sessionStorage.removeItem("gatto-cookie-bar");
+  localStorage.removeItem("gatto-cookie-bar");
+  window.location.reload(false); 
 }
 
 function removeCookieBar(){
@@ -45,8 +52,9 @@ function enableJavascriptFiles(){
     e.parentNode.removeChild(e);
 
   });
-
-  fireDOMContentLoaded();
+  if(CookieConsentFireDOMContentLoaded){
+    fireDOMContentLoaded();
+  }
 
 }
 
@@ -88,10 +96,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     bar.appendChild(barBtnContainer);
 
-
-
     document.body.appendChild(bar);
-
   }
 
 });

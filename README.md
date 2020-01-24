@@ -15,7 +15,7 @@ To block a script edit it like this:
 
 `<script type="text/javascript" src="your-script-path"></script>`
 
-&#11015;&#11015;&#11015;
+V V V
 
 `<script type="text/plain" src="your-script-path" data-cookieconsent></script>`
 
